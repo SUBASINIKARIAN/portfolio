@@ -1,10 +1,14 @@
 import { experience } from "@/data/portfolio";
+import Period from "@/components/Period";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export default function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-5xl px-6 py-24">
+    <section
+      id="experience"
+      className="w-full px-6 py-24 sm:px-10 lg:px-16 xl:px-24"
+    >
       <Reveal>
         <SectionHeading eyebrow="Experience" title="Where I've worked" />
       </Reveal>
@@ -18,9 +22,11 @@ export default function Experience() {
                   {job.role}{" "}
                   <span className="text-gradient">· {job.company}</span>
                 </h3>
-                <span className="text-sm text-muted">{job.period}</span>
+                <span className="text-sm text-muted">
+                  <Period range={job.period} />
+                </span>
               </div>
-              <ul className="mt-4 space-y-2.5">
+              <ul className="mt-4 grid gap-x-8 gap-y-2.5 xl:grid-cols-2">
                 {job.points.map((point) => (
                   <li
                     key={point}

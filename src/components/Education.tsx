@@ -5,7 +5,10 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function Education() {
   return (
-    <section id="education" className="mx-auto max-w-5xl px-6 py-24">
+    <section
+      id="education"
+      className="w-full px-6 py-24 sm:px-10 lg:px-16 xl:px-24"
+    >
       <Reveal>
         <SectionHeading
           eyebrow="Education & Certifications"

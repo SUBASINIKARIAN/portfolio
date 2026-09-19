@@ -12,10 +12,9 @@ export default function Nav() {
       <nav className="glass-strong flex w-full max-w-4xl items-center justify-between rounded-full px-5 py-3">
         <a
           href="#top"
-          className="text-sm font-semibold tracking-wide text-foreground"
+          className="text-lg font-bold tracking-tight text-foreground"
         >
-          {site.initials}
-          <span className="text-muted"> / {site.title}</span>
+          {site.wordmark}
         </a>
 
         <ul className="hidden items-center gap-6 md:flex">

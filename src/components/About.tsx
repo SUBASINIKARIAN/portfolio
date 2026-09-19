@@ -4,7 +4,10 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-5xl px-6 py-24">
+    <section
+      id="about"
+      className="w-full px-6 py-24 sm:px-10 lg:px-16 xl:px-24"
+    >
       <Reveal>
         <SectionHeading eyebrow="About" title="Who I am" />
       </Reveal>
@@ -28,7 +31,7 @@ export default function About() {
         </div>
       </Reveal>
 
-      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {skills.map((group, i) => (
           <Reveal key={group.category} delay={0.05 * i}>
             <div className="glass h-full rounded-2xl p-5">

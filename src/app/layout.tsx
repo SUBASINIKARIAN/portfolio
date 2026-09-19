@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Subasini K is an AI/ML Engineer specializing in RAG pipelines, LLM applications, voice AI, and explainable machine learning, currently building production AI systems at Magilhub.";
+  "Subasini K is an AI/ML Engineer specializing in RAG pipelines, LLM applications, voice AI, and explainable machine learning, currently building production AI systems at Brisque.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

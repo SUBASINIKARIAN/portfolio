@@ -1,6 +1,6 @@
 export const site = {
   name: "Subasini K",
-  initials: "SK",
+  wordmark: "subasini.",
   title: "AI/ML Engineer",
   tagline:
     "I build production AI systems — RAG pipelines, voice agents, and explainable ML — that turn ambiguous business problems into deployed, measurable solutions.",
@@ -82,8 +82,8 @@ export const skills = [
 export const experience = [
   {
     role: "Associate AIML Developer",
-    company: "Magilhub",
-    period: "Jul 2024 – Present",
+    company: "Brisque",
+    period: { start: "2024-07", end: null },
     points: [
       "Engineered a production AI voice ordering system using the Gemini Live API and Twilio with Redis-cached session state for sub-200ms multi-turn conversations, with intent recognition and slot-filling for complex ordering dialogues.",
       "Designed RAG pipelines using the HyDE (Hypothetical Document Embeddings) approach for sparse or ambiguous queries, significantly improving retrieval accuracy over standard embedding search.",
@@ -94,8 +94,8 @@ export const experience = [
   },
   {
     role: "AI/ML Intern",
-    company: "Magilhub",
-    period: "Apr 2024 – Jun 2024",
+    company: "Brisque",
+    period: { start: "2024-04", end: "2024-06" },
     points: [
       "Automated GenAI-based reporting workflows on GCP using the Gemini API, improving reporting efficiency by 60%.",
       "Built data-driven analytics for operational forecasting and trend analysis, and designed collaborative/content-based recommendation models to improve user engagement.",
@@ -107,7 +107,7 @@ export const experience = [
 export const projects = [
   {
     title: "Intelligent Financial Document Analyst",
-    period: "Nov 2025 – Jan 2026",
+    period: { start: "2025-11", end: "2026-01" },
     description:
       "End-to-end RAG system using LangChain, Pinecone, and the Claude API for natural-language querying over financial documents — loan agreements, annual reports, insurance policies — with context-aware semantic retrieval.",
     points: [
@@ -121,7 +121,7 @@ export const projects = [
   },
   {
     title: "Explainable ML Credit Scoring System",
-    period: "Feb 2026 – Apr 2026",
+    period: { start: "2026-02", end: "2026-04" },
     description:
       "XGBoost credit risk model trained on the LendingClub dataset, achieving 91% AUC-ROC and 88% F1-score, with SHAP for per-decision plain-language explanations meeting Explainable AI (XAI) standards.",
     points: [
@@ -135,7 +135,7 @@ export const projects = [
   },
   {
     title: "Empathetic Response AI — Conversational RAG Chatbot",
-    period: "Aug 2025 – Sep 2025",
+    period: { start: "2025-08", end: "2025-09" },
     description:
       "Production RAG conversational AI using MCP (Model Context Protocol) and Vertex AI, supporting multi-turn natural-language queries over operational databases via vector search and LLM reasoning.",
     points: [
@@ -149,7 +149,7 @@ export const projects = [
   },
   {
     title: "Multimodal Fingerprint Liveness Detection",
-    period: "Nov 2023 – May 2024",
+    period: { start: "2023-11", end: "2024-05" },
     description:
       "Multimodal deep learning pipeline fusing texture and frequency-domain features with OpenCV preprocessing to classify live fingers vs. spoofs.",
     points: [
@@ -173,18 +173,13 @@ export const education = [
 
 export const certifications = [
   {
-    name: "AWS Certified AI Practitioner",
-    issuer: "Amazon Web Services (AWS)",
-    year: "2026",
-  },
-  {
     name: "Innovation Award — Q1 & Q2 2025",
-    issuer: "Magilhub",
+    issuer: "Brisque",
     year: "2025",
   },
   {
     name: "Trainee Excellence Award — Q1 2024",
-    issuer: "Magilhub",
+    issuer: "Brisque",
     year: "2024",
   },
 ];

@@ -1,17 +1,21 @@
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/icons";
 import { projects } from "@/data/portfolio";
+import Period from "@/components/Period";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export default function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-5xl px-6 py-24">
+    <section
+      id="projects"
+      className="w-full px-6 py-24 sm:px-10 lg:px-16 xl:px-24"
+    >
       <Reveal>
         <SectionHeading eyebrow="Projects" title="Things I've built" />
       </Reveal>
 
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-2 2xl:grid-cols-4">
         {projects.map((project, i) => (
           <Reveal key={project.title} delay={0.05 * i}>
             <article className="glass group flex h-full flex-col rounded-2xl p-6 transition-colors hover:bg-white/[0.06]">
@@ -31,7 +35,9 @@ export default function Projects() {
                   </a>
                 )}
               </div>
-              <p className="mt-1 text-xs text-muted">{project.period}</p>
+              <p className="mt-1 text-xs text-muted">
+                <Period range={project.period} />
+              </p>
               <p className="mt-3 text-sm leading-relaxed text-muted">
                 {project.description}
               </p>
