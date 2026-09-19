@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
@@ -12,9 +13,31 @@ export default function Hero() {
       className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-28 text-center"
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
+        className="relative mb-6 h-32 w-32 shrink-0 rounded-full p-[3px] sm:h-36 sm:w-36"
+        style={{
+          background:
+            "linear-gradient(135deg, var(--accent-cyan), var(--accent-violet) 55%, var(--accent-fuchsia))",
+        }}
+      >
+        <div className="h-full w-full overflow-hidden rounded-full border-2 border-background">
+          <Image
+            src="/headshot.jpg"
+            alt={site.name}
+            width={288}
+            height={288}
+            priority
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
         className="glass mb-6 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-muted"
       >
         <span className="relative flex h-2 w-2">
